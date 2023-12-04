@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+picPath: D:\xxx\yyy\
+
+aliyun:
+  xxxx: 11
+  yyyy: yyyyyyyyy
+  zzzz: zzzzzzzzz
+  aaaa: aaaaaaaaa
+  bbbb: bbbbbbbbb
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.qf.firstspringboot.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.245.129:3306/Air?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
