@@ -11,6 +11,7 @@ aliyun:
   zzzz: zzzzzzzzz
   aaaa: aaaaaaaaa
   bbbb: bbbbbbbbb
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.qf.firstspringboot.entity
@@ -24,3 +25,12 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    # 视图的前缀和后缀
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+
+logging:
+  level:
+    com.qf.firstspringboot.mapper: DEBUG
